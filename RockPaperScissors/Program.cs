@@ -24,9 +24,14 @@ else if ((pleyerChoose == "r" && computerChose == "Rock") || (pleyerChoose == "s
 {
 	Console.WriteLine("This game was a draw");
 }
-else
+else if ((pleyerChoose == "s" && computerChose == "Rock") || (pleyerChoose == "p" && computerChose == "Scissors") || (pleyerChoose == "r" && computerChose == "Pepar"))
 {
 	Console.WriteLine("You lost");
+}
+else
+{
+	Console.WriteLine("Invalide Input. Try Again...");
+	return;
 }
 
 
